@@ -1,10 +1,11 @@
 <header>
-
+  <title>Task Manager</title>
 </header>
 
-
-<%= @projects.each do |project| %>
-  <div>
-    <h1><%= project.name %></h1>
-  </div>
-<% end %>
+<div>
+  <% @projects.each do |project| %>
+    <div class="projectdiv">
+      <h1><%= project.name %></h1>
+    </div>
+  <% end %>
+</div>
