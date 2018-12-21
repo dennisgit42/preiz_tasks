@@ -2,10 +2,16 @@
   <title>Task Manager</title>
 </header>
 
+<nav class="navbar navbar-dark fixed-top">
+  <h1 id="title">Task Manager</h1>
+</nav>
+
 <div>
+  <h1>Here is a list of your active projects: </h1>
+  <br />
   <% @projects.each do |project| %>
     <div class="projectdiv">
-      <h1><%= project.name %></h1>
+      <div><%= project.name %></div>
     </div>
   <% end %>
 </div>

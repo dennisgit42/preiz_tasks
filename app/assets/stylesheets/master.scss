@@ -1,3 +1,5 @@
+@import 'bootstrap';
+
 #overlay{
   position: fixed;
   display: block;
@@ -8,10 +10,28 @@
 }
 
 .projectdiv{
-  background-color: cyan;
+  position: relative;
+  background-color: green;
+  color: white;
   width: 18%;
-  height: 100px;
+  height: 75px;
   float: left;
-  margin-left: 2%;
+  margin: 1% 1%;
   display: inline-block;  
+}
+
+.projectdiv div{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navbar{
+  background-color: green;
+}
+
+#title{
+  color: white;
+  top: 50%;
 }
