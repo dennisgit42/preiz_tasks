@@ -9,12 +9,20 @@
   z-index: 2;
 }
 
+#indexintro{
+  font: bold 1.5rem Arial;
+}
+
+.clear{
+  clear: both;
+}
+
 .projectdiv{
   position: relative;
   background-color: green;
   color: white;
   width: 18%;
-  height: 75px;
+  height: 13vh;
   float: left;
   margin: 1% 1%;
   display: inline-block;  
@@ -22,9 +30,7 @@
 
 .projectdiv div{
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  padding: 1em
 }
 
 .navbar{
@@ -34,4 +40,8 @@
 #title{
   color: white;
   top: 50%;
+}
+
+body{
+  padding-top: 70px;
 }

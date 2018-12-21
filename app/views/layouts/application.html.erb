@@ -3,12 +3,22 @@
   <head>
     <title>PreizTasks</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <header class="row navbar fixed-top">
+      <h1 class="col-3" id="title">Task Manager</h1>
+      <div class="col-9">
+        <%= link_to "Sign In", "#" %>
+        <%= link_to "Sign Out", "#" %>
+        <%= link_to "Create Account", "#" %>
+      </div>
+    </header>
+
+    <br class="clear" />
+
     <%= yield %>
   </body>
 </html>
