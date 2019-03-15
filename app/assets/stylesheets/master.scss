@@ -35,13 +35,14 @@
 
 .navbar{
   background-color: green;
+  width: 100%;
 }
 
-#title{
+.nav-item{
   color: white;
-  top: 50%;
 }
 
-body{
-  padding-top: 70px;
+.nav-item a{
+  color: white;
 }
+
