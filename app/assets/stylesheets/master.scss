@@ -1,5 +1,9 @@
 @import 'bootstrap';
 
+body{
+  background: url("seigaiha.png");
+}
+
 #overlay{
   position: fixed;
   display: block;
@@ -17,6 +21,11 @@
   clear: both;
 }
 
+#indexintro{
+  color: green;
+  margin: 0 1%;
+}
+
 .projectdiv{
   position: relative;
   background-color: green;
@@ -25,7 +34,18 @@
   height: 13vh;
   float: left;
   margin: 1% 1%;
-  display: inline-block;  
+  display: inline-block;
+  -webkit-box-shadow: 5px 5px 10px #B4F8B4;
+  -moz-box-shadow: 5px 5px 10px #B4F8B4;
+  box-shadow: 5px 5px 10px #B4F8B4;
+  border: 2px solid #73f273;
+}
+
+.box{
+  -webkit-box-shadow: 5px 5px 10px #B4F8B4;
+  -moz-box-shadow: 5px 5px 10px #B4F8B4;
+  box-shadow: 5px 5px 10px #B4F8B4;
+  border: 2px solid #73f273;
 }
 
 .projectdiv div{
@@ -35,7 +55,6 @@
 
 .navbar{
   background-color: green;
-  width: 100%;
 }
 
 .nav-item{
