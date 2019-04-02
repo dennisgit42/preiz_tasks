@@ -16,6 +16,6 @@ module PreizTasks
     config.assets.paths << "#{Rails.root}/app/assets/fonts"
 
     # precompile additional assets
-    config.assets.precompile += %w(.tff)
+    config.assets.precompile += %w(.svg .eot .woff .tff)
   end
 end
