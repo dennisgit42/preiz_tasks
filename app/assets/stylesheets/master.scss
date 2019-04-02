@@ -1,7 +1,27 @@
 @import 'bootstrap';
 
+@font-face{
+  font-family: ubuntu;
+  src: font_url('Ubuntu-Bold.ttf'),
+       font_url('Ubuntu-BoldItalic.ttf'),
+       font_url('Ubuntu-Italic.ttf'),
+       font_url('Ubuntu-Light.ttf'),
+       font_url('Ubuntu-LightItalic.ttf'),
+       font_url('Ubuntu-Medium.ttf'),
+       font_url('Ubuntu-MediumItalic.ttf'),
+       font_url('Ubuntu-Regular.ttf');
+  font-weight:  normal;
+  font-style: normal;
+}
+
 body{
   background: image_url("seigaiha.png");
+  font-family: ubuntu-regular sans-serif;
+  font-size: 18px;
+}
+
+#title {
+  font-size: 24px;
 }
 
 #overlay{
@@ -54,7 +74,9 @@ body{
 }
 
 .navbar{
-  background-color: green;
+  background: green image_url("asfalt-light.png");
+  filter: drop-shadow(5px 5px 10px #B4F8B4);
+  font-size: 1em;
 }
 
 .nav-item{

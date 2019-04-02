@@ -11,5 +11,11 @@ module PreizTasks
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+
+    # adding fonts path
+    config.assets.paths << "#{Rails.root}/app/assets/fonts"
+
+    # precompile additional assets
+    config.assets.precompile += %w(.tff)
   end
 end
