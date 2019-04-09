@@ -70,7 +70,23 @@ body{
   color: white;
 }
 
-.nav-item a{
+.nav-item a {
   color: white;
 }
+
+.dropdown-menu {
+  z-index: -1;
+  background: green image_url("asfalt-light.png");
+}
+
+.dropdown-item a {
+  color: white;
+}
+
+.dropdown-item:hover {
+  background: green image_url("asfalt-light.png");
+}
+
+
+
 
