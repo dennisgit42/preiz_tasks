@@ -1,13 +1,13 @@
 <nav class="navbar row">
-  <div class="nav-item mr-auto col-2" id="title"><%= link_to "Task Manager", root_path({sort_by: :updated_at, direction: :desc}) %></div>
+  <div class="nav-item mr-auto col-2" id="title"><%= link_to "Task Manager", projects_path({sort_by: :updated_at, direction: :desc}) %></div>
   <div class="dropdown mr-auto col-2">
     <div class="nav-item dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true">
       <%= link_to 'Sort Projects', '#' %>
     </div>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-      <span class="dropdown-item" href="#"><%= link_to 'Sort By Name', root_path({sort_by: :name, direction: :asc}) %></span>
-      <span class="dropdown-item" href="#"><%= link_to 'Sort By Last Modified', root_path({sort_by: :updated_at, direction: :desc}) %></span>
-      <span class="dropdown-item" href="#"><%= link_to 'Sort By Last Created', root_path({sort_by: :created_at, direction: :desc}) %></span>
+      <span class="dropdown-item" href="#"><%= link_to 'Sort By Name', projects_path({sort_by: :name, direction: :asc}) %></span>
+      <span class="dropdown-item" href="#"><%= link_to 'Sort By Last Modified', projects_path({sort_by: :updated_at, direction: :desc}) %></span>
+      <span class="dropdown-item" href="#"><%= link_to 'Sort By Last Created', projects_path({sort_by: :created_at, direction: :desc}) %></span>
     </div>
   </div>
   <div class="nav-item mr-auto col-2"><%= link_to 'Create New Project', '#' %></div>

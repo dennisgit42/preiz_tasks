@@ -5,4 +5,8 @@ class ProjectsController < ApplicationController
   def index
     @projects = ProjectSorter.sort(params)
   end
+
+  def new
+    
+  end
 end
