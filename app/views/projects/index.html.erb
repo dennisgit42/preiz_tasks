@@ -10,12 +10,12 @@
       <span class="dropdown-item" href="#"><%= link_to 'Sort By Last Created', projects_path({sort_by: :created_at, direction: :desc}) %></span>
     </div>
   </div>
-  <div class="nav-item mr-auto col-2"><%= link_to 'Create New Project', '#' %></div>
+  <div class="nav-item mr-auto col-2"><%= link_to 'Create New Project', new_project_path %></div>
   <div class="nav-item mr-auto col-2"><%= link_to 'See Active Projects', '#' %></div>
   <div class="nav-item mr-auto col-2"><%= link_to 'See closed projects', '#' %></div>
   <% if user_signed_in? %>
     <div class="nav-item col-2">
-      <div>Welcome, <%= current_user.email %>."</div>
+      <div>Welcome, <%= current_user.name %></div>
       <%= link_to "Log Out", destroy_user_session_path, method: :delete, class: "nav-link" %>       
     </div>
   <% else %>
