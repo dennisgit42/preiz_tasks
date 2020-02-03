@@ -1,7 +1,7 @@
 require "projectSorter.rb"
 
 class ProjectsController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :create, :get, :update]
+  before_action :authenticate_user!, only: [:new, :create, :get]
 
   def index
     @projects = ProjectSorter.sort(params)
@@ -12,8 +12,12 @@ class ProjectsController < ApplicationController
   end
 
   def create
-    Project.create(project_params)
-    redirect_to root_path
+    @project = Project.create(project_params)
+    if @project.invalid?
+      redirect_to new_project_path, alert: "You have entered invalid values for the form. Please try again."
+    else
+      redirect_to root_path
+    end
   end
 
   private

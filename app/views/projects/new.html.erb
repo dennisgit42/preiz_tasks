@@ -1,14 +1,8 @@
 <div class="box col-10 offset-1">
   <h1>Please enter the details of your project in the below form:</h1>
-  <form action='/projects' method="post">
-      <div>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="user_name">
-      </div>
-      <div>
-        <label for="description">Description:</label>
-        <textarea id="description" name="description"></textarea>
-      </div>
-      <button type="submit" value="Create">Send your message!</button>
-  </form>
+  <%= simple_form_for @project do |f| %>
+    <%= f.input :name, placeholder: 'Must be between 3 and 30 characters.' %>
+    <%= f.input :description, as: :text, placeholder: 'Can be a maximum of 500 characters.' %>
+    <%= f.submit 'Submit', class: 'btn submit' %>
+  <% end %>
 </div>

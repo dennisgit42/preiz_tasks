@@ -55,6 +55,19 @@ body{
   -moz-box-shadow: 5px 5px 10px #B4F8B4;
   box-shadow: 5px 5px 10px #B4F8B4;
   border: 2px solid #73f273;
+  padding: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.submit {
+  border: solid white;
+  color: white;
+}
+
+.submit:hover {
+  background-color: #3dbf7f;
+  color: white;
 }
 
 .projectdiv div{
