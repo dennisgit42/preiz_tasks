@@ -9,5 +9,6 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.permit(:sign_up){|user| user.permit(:name, :email, :password)}
     devise_parameter_sanitizer.permit(:sign_in){|user| user.permit(:email, :password)}
     devise_parameter_sanitizer.permit(:account_update){|user| user.permit(:name, :email, :password, :current_password)}
+    devise_parameter_sanitizer.permit(:account_destroy){|user| user.permit(:email)}
   end
 end
