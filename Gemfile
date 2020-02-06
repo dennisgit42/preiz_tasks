@@ -8,6 +8,9 @@ end
 # adding figaro gem for env variables
 gem 'figaro'
 
+# adding sendgrid for production emails
+gem 'sendgrid-ruby'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.6'
 # Use postgresql as the database for Active Record
