@@ -1,5 +1,5 @@
 class AccountDeletionMailer < ApplicationMailer
-  default from: 'do-not-reply@preiztasks.com'
+  default from: 'no-reply@preiz_tasks.herokuapp.com'
 
   def account_deletion_email(user)
     @user_name = user.name
