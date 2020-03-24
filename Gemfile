@@ -5,6 +5,9 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+# adding omniauth-facebook gem
+gem 'omniauth-facebook'
+
 # adding figaro gem for env variables
 gem 'figaro'
 
